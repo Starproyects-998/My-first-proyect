@@ -2,17 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Titulo de mi pagina web</title>
+    <title>Sitio web profesional</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 <body>
-    <p>Mi primer sitio web después de tanto tiempo</p>
-    <h1>Este título de prueba</h1>
-    <a href="">Enlace</a>
-    <div>
-        <h2>Subtitulo</h2>
-        <p>Este es un parrafo totalmente de relleno solo para probar este tipo de elemento</p>
+    <div class="wrapper">
+        
+        <!-- Banner -->
+        <div class="banner-wrapper">
+            <header>
+                <div class="header-inner">
+                    <a href="index.html"id="logo">
+                        <img src="C:\Users\pc\Desktop\Páginas de prueba\img\banner\images.jpg" alt="logo de sitio web">
+                    </a>
+                    <nav>
+                        <a href="snn" id="menu-icon">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="habilidades">Skills</a>
+                            </li>
+                            <li>
+                                <a href="portafolio">Folder</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="slider-wrap">
+                <ul class="slider1">
+                    <li> <img src="C:\Users\pc\Desktop\Páginas de prueba\img\slider\01.jpg" alt="01"></li>
+                    <li> <img src="C:\Users\pc\Desktop\Páginas de prueba\img\slider\02.jpg" alt="02"></li>
+                    <li> <img src="C:\Users\pc\Desktop\Páginas de prueba\img\slider\03.jpg" alt="03"></li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="">
+
+        </div>
+
     </div>
+    
+    <!-- Scripts -->
+    <script>
+    $(document).ready(function(){
+        $('.slider1').bxSlider({
+            mode: 'fade'
+        })
+        $('.slider2').bxSlider({
+            mode: 'fade'
+        })
+        $('.slider3').bxSlider({
+            mode: 'fade'
+        })
+    })
+    </script>
+
 </body>
 </html>
